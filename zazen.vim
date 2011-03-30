@@ -10,23 +10,23 @@ if exists("syntax_on")
 endif
 let colors_name = "zazen"
 
-hi Normal       guifg=#cccccc          guibg=#1a1a1a   gui=NONE
+hi Normal       guifg=#cccccc          guibg=#000000   gui=NONE
 hi CursorLine   guifg=NONE             guibg=#555555   gui=NONE
-hi CursorColumn guifg=NONE             guibg=#000000   gui=NONE
+hi CursorColumn guifg=NONE             guibg=#1a1a1a   gui=NONE
 hi LineNr       guifg=#555555          guibg=NONE      gui=NONE
 hi Statement    guifg=#a6a6a6          guibg=NONE      gui=bold
 hi Function     guifg=#eeeeee          guibg=NONE      gui=bold
 hi String       guifg=#838383          guibg=NONE      gui=NONE
 hi Type         guifg=#eeeeee          guibg=NONE      gui=bold
 hi Conditional  guifg=#787878          guibg=NONE      gui=bold
-hi Todo         guifg=#ff0000          guibg=NONE      gui=underline
+hi Todo         guifg=#ff0000          guibg=#220000      gui=underline
 hi Comment      guifg=#777777          guibg=NONE      gui=NONE
 hi PmenuSel     guifg=#000000          guibg=#a9a9aa   gui=bold
 hi Special      guifg=#868585          guibg=NONE      gui=NONE
 hi Identifier   guifg=#ffffff          guibg=NONE      gui=bold
 hi Keyword      guifg=#666666          guibg=NONE      gui=bold
 hi PreProc      guifg=#6b6b6b          guibg=NONE      gui=bold
-hi Include      guifg=#cc7833          guibg=NONE      gui=NONE
+hi Include      guifg=#e0e0e0          guibg=NONE      gui=NONE
 hi Constant     guifg=#838383          guibg=#222222   gui=bold
 hi Delimiter    guifg=#838383          guibg=NONE      gui=NONE
 
@@ -36,15 +36,15 @@ hi Cursor       guifg=bg               guibg=fg        gui=NONE
 hi CursorIM     guifg=bg               guibg=fg        gui=NONE
 hi lCursor      guifg=bg               guibg=fg        gui=NONE
 
-hi DiffAdd      guifg=fg               guibg=#444444   gui=NONE
-hi DiffChange   guifg=bg               guibg=#909090   gui=NONE
-hi DiffDelete   guifg=NONE             guibg=#292929   gui=NONE
-hi DiffText     guifg=NONE             guibg=#383838   gui=NONE
+hi DiffAdd      guifg=#00cc00          guibg=#002200   gui=NONE
+hi DiffChange   guifg=#ff9955          guibg=#220000   gui=NONE
+hi DiffDelete   guifg=#ff0000          guibg=#220000   gui=NONE
+hi DiffText     guifg=#ff0000          guibg=#220000   gui=NONE
 
 hi Directory    guifg=#929292          guibg=bg        gui=NONE
 hi ErrorMsg     guifg=#6f6f6f          guibg=NONE      gui=NONE
-hi FoldColumn   guifg=#555555           guibg=#414141   gui=bold
-hi Folded       guifg=#828282           guibg=#212121   gui=italic
+hi FoldColumn   guifg=#555555          guibg=#414141   gui=bold
+hi Folded       guifg=#828282          guibg=#212121   gui=italic
 
 hi IncSearch    guifg=#000000          guibg=#adadad   gui=NONE
 hi Search       guifg=#000000          guibg=#c5c3c3   gui=NONE
