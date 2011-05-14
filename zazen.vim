@@ -19,7 +19,7 @@ hi Function     guifg=#eeeeee          guibg=NONE      gui=bold
 hi String       guifg=#838383          guibg=NONE      gui=NONE
 hi Type         guifg=#eeeeee          guibg=NONE      gui=bold
 hi Conditional  guifg=#787878          guibg=NONE      gui=bold
-hi Todo         guifg=#ff0000          guibg=#220000      gui=underline
+hi Todo         guifg=#ff0000          guibg=#220000   gui=underline
 hi Comment      guifg=#777777          guibg=NONE      gui=NONE
 hi PmenuSel     guifg=#000000          guibg=#a9a9aa   gui=bold
 hi Special      guifg=#868585          guibg=NONE      gui=NONE
@@ -31,7 +31,7 @@ hi Constant     guifg=#838383          guibg=#222222   gui=bold
 hi Delimiter    guifg=#838383          guibg=NONE      gui=NONE
 
 hi Visual       guifg=#ffffff          guibg=#515151   gui=NONE
-hi ColorColumn  guifg=NONE             guibg=#e6e6e6 
+hi ColorColumn  guifg=NONE             guibg=#222222
 hi Cursor       guifg=bg               guibg=fg        gui=NONE
 hi CursorIM     guifg=bg               guibg=fg        gui=NONE
 hi lCursor      guifg=bg               guibg=fg        gui=NONE
@@ -91,13 +91,13 @@ hi link pythonDecoratorFunction pythonDecorator
 " -----------------------------------------------------------------------------
 hi htmlLink         guifg=#666666      guibg=NONE      gui=underline,italic
 
-hi htmlTagName          guifg=NONE             guibg=NONE      gui=NONE
+hi htmlTagName      guifg=NONE         guibg=NONE      gui=NONE
 hi link htmlScriptTag htmlTagName
 hi link htmlTagN htmlTagName
 hi link htmlEndTag htmlTagName
 hi link htmlSpecialTagName htmlTagName
 
-hi link cssRenderAttr Constant 
+hi link cssRenderAttr Constant
 hi link cssTextAttr Constant
 hi link cssUIAttr Constant
 hi link cssTableAttr Constant
@@ -131,5 +131,4 @@ hi link objcMessageName Identifier
 
 hi link javaType Statement
 hi link cppStatement  Statement
-
 
