@@ -85,50 +85,80 @@ hi qfFileName       guifg=#6a6a6a      guibg=NONE      gui=italic
 hi qfLineNr         guifg=fg           guibg=NONE      gui=NONE
 hi qfError          guifg=fg           guibg=#000000   gui=undercurl
 
-" -----------------------------------------------------------------------------
-hi pythonDecorator  guifg=#3b3b3b      guibg=NONE      gui=bold
-hi link pythonDecoratorFunction pythonDecorator
-" -----------------------------------------------------------------------------
-hi htmlLink         guifg=#666666      guibg=NONE      gui=underline,italic
+" 256-color Terminal support
+if &t_Co > 255
+   hi  Normal             ctermfg=251        ctermbg=0          cterm=NONE
+   hi  CursorLine         ctermfg=NONE       ctermbg=240        cterm=NONE
+   hi  CursorColumn       ctermfg=NONE       ctermbg=234        cterm=NONE
+   hi  LineNr             ctermfg=240        ctermbg=NONE       cterm=NONE
+   hi  Statement          ctermfg=248        ctermbg=NONE       cterm=bold
+   hi  Function           ctermfg=255        ctermbg=NONE       cterm=bold
+   hi  String             ctermfg=244        ctermbg=NONE       cterm=NONE
+   hi  Type               ctermfg=255        ctermbg=NONE       cterm=bold
+   hi  Conditional        ctermfg=243        ctermbg=NONE       cterm=bold
+   hi  Todo               ctermfg=9          ctermbg=NONE       cterm=underline
+   hi  Comment            ctermfg=243        ctermbg=NONE       cterm=NONE
+   hi  PmenuSel           ctermfg=0          ctermbg=248        cterm=bold
+   hi  Special            ctermfg=244        ctermbg=NONE       cterm=NONE
+   hi  Identifier         ctermfg=15         ctermbg=NONE       cterm=bold
+   hi  Keyword            ctermfg=242        ctermbg=NONE       cterm=bold
+   hi  PreProc            ctermfg=242        ctermbg=NONE       cterm=bold
+   hi  Include            ctermfg=254        ctermbg=NONE       cterm=NONE
+   hi  Constant           ctermfg=244        ctermbg=235        cterm=bold
+   hi  Delimiter          ctermfg=244        ctermbg=NONE       cterm=NONE
 
-hi htmlTagName      guifg=NONE         guibg=NONE      gui=NONE
-hi link htmlScriptTag htmlTagName
-hi link htmlTagN htmlTagName
-hi link htmlEndTag htmlTagName
-hi link htmlSpecialTagName htmlTagName
+   hi  Visual             ctermfg=15         ctermbg=239        cterm=NONE
+   hi  ColorColumn        ctermfg=NONE       ctermbg=234
+   hi  Cursor             ctermfg=bg         ctermbg=fg         cterm=NONE
+   hi  CursorIM           ctermfg=bg         ctermbg=fg         cterm=NONE
+   hi  lCursor            ctermfg=bg         ctermbg=fg         cterm=NONE
 
-hi link cssRenderAttr Constant
-hi link cssTextAttr Constant
-hi link cssUIAttr Constant
-hi link cssTableAttr Constant
-hi link cssColorAttr Constant
-hi link cssBoxAttr Constant
-hi link cssCommonAttr Constant
-hi link cssFunctionName Constant
-hi link cssRenderProp Type
-hi link cssBoxProp cssRenderProp
+   hi  DiffAdd            ctermfg=40         ctermbg=22         cterm=NONE
+   hi  DiffChange         ctermfg=209        ctermbg=52         cterm=NONE
+   hi  DiffDelete         ctermfg=9          ctermbg=52         cterm=NONE
+   hi  DiffText           ctermfg=9          ctermbg=52         cterm=NONE
 
-hi link cssTagName Statement
-hi link cssClassName cssTagName
-hi link cssIdentifier cssTagName
-hi link cssPseudoClass cssTagName
-hi link cssPseudoClassId cssTagName
+   hi  Directory          ctermfg=246        ctermbg=bg         cterm=NONE
+   hi  ErrorMsg           ctermfg=242        ctermbg=NONE       cterm=NONE
+   hi  FoldColumn         ctermfg=240        ctermbg=237        cterm=bold
+   hi  Folded             ctermfg=244        ctermbg=234        cterm=italic
 
-hi cssBraces            guifg=fg            guibg=bg              gui=NONE
-hi javaScript           guifg=fg            guibg=NONE
-hi link javaScriptFunction Statement
-hi link javaScriptMember Statement
-hi link javaScriptValue Constant
+   hi  IncSearch          ctermfg=0          ctermbg=248        cterm=NONE
+   hi  Search             ctermfg=0          ctermbg=251        cterm=NONE
+   hi  MatchParen         ctermfg=0          ctermbg=248        cterm=bold
+   hi  ModeMsg            ctermfg=15         ctermbg=243        cterm=bold
+   hi  MoreMsg            ctermfg=243        ctermbg=bg         cterm=bold
+   hi  NonText            ctermfg=244        ctermbg=bg         cterm=bold
 
-hi link objcClass Type
-hi link cocoaClass objcClass
-hi link objcSubclass objcClass
-hi link objcSuperclass objcClass
-hi link cocoaFunction Function
-hi link objcMethodName Identifier
-hi link objcMethodArg Normal
-hi link objcMessageName Identifier
+   hi  Pmenu              ctermfg=242        ctermbg=237        cterm=NONE
+   hi  PmenuSbar          ctermfg=fg         ctermbg=241        cterm=NONE
+   hi  PmenuThumb         ctermfg=fg         ctermbg=243        cterm=NONE
 
-hi link javaType Statement
-hi link cppStatement  Statement
+   hi  Question           ctermfg=238        ctermbg=bg         cterm=bold
+   hi  SignColumn         ctermfg=15         ctermbg=242        cterm=NONE
 
+   hi  SpecialKey         ctermfg=15         ctermbg=242        cterm=NONE
+
+   hi  SpellBad           ctermbg=0          cterm=NONE
+   hi  SpellCap           ctermbg=0          cterm=NONE
+   hi  SpellLocal         ctermbg=0          cterm=NONE
+   hi  SpellRare          ctermbg=0          cterm=NONE
+   hi  StatusLine         ctermfg=0          ctermbg=243        cterm=bold
+   hi  StatusLineNC       ctermfg=241        ctermbg=235        cterm=italic
+   hi  TabLine            ctermfg=fg         ctermbg=243        cterm=underline
+   hi  TabLineFill        ctermfg=fg         ctermbg=bg         cterm=reverse
+   hi  TabLineSel         ctermfg=fg         ctermbg=bg         cterm=bold
+   hi  Title              ctermfg=242        ctermbg=bg         cterm=bold
+   hi  VertSplit          ctermfg=234        ctermbg=234
+   hi  WarningMsg         ctermfg=252        ctermbg=240        cterm=NONE
+   hi  WildMenu           ctermfg=0          ctermbg=244        cterm=NONE
+   hi  Boolean            ctermfg=241        ctermbg=NONE       cterm=bold
+   hi  Ignore             ctermfg=bg         ctermbg=NONE       cterm=NONE
+   hi  Error              ctermfg=210        ctermbg=NONE       cterm=underline
+
+   hi  VimError           ctermfg=250        ctermbg=236        cterm=bold
+   hi  VimCommentTitle    ctermfg=240        ctermbg=bg         cterm=bold,italic
+   hi  qfFileName         ctermfg=242        ctermbg=NONE       cterm=italic
+   hi  qfLineNr           ctermfg=fg         ctermbg=NONE       cterm=NONE
+   hi  qfError            ctermfg=fg         ctermbg=0          cterm=underline
+end
