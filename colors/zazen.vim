@@ -78,7 +78,12 @@ hi WildMenu     guifg=#000000          guibg=#828282   gui=NONE
 hi Boolean      guifg=#616060          guibg=NONE      gui=bold
 hi Ignore       guifg=bg               guibg=NONE      gui=NONE
 hi Error        guifg=#ff7272          guibg=NONE      gui=undercurl guisp=#ff0000
+
 " -----------------------------------------------------------------------------
+" Taglist
+hi MyTagListFileName guifg=#ffffff      guibg=#444444
+hi MyTagListTitle    guifg=#666666      guibg=bg        gui=bold
+
 hi VimError         guifg=#b6b6b6      guibg=#313131   gui=bold
 hi VimCommentTitle  guifg=#5c5c5c      guibg=bg        gui=bold,italic
 hi qfFileName       guifg=#6a6a6a      guibg=NONE      gui=italic
@@ -144,7 +149,7 @@ if &t_Co > 255
    hi  SpellLocal         ctermbg=0          cterm=NONE
    hi  SpellRare          ctermbg=0          cterm=NONE
    hi  StatusLine         ctermfg=0          ctermbg=243        cterm=bold
-   hi  StatusLineNC       ctermfg=241        ctermbg=235        cterm=italic
+   hi  StatusLineNC       ctermfg=241        ctermbg=235        cterm=NONE
    hi  TabLine            ctermfg=fg         ctermbg=243        cterm=underline
    hi  TabLineFill        ctermfg=fg         ctermbg=bg         cterm=reverse
    hi  TabLineSel         ctermfg=fg         ctermbg=bg         cterm=bold
@@ -157,8 +162,12 @@ if &t_Co > 255
    hi  Error              ctermfg=210        ctermbg=NONE       cterm=underline
 
    hi  VimError           ctermfg=250        ctermbg=236        cterm=bold
-   hi  VimCommentTitle    ctermfg=240        ctermbg=bg         cterm=bold,italic
-   hi  qfFileName         ctermfg=242        ctermbg=NONE       cterm=italic
+   hi  VimCommentTitle    ctermfg=244        ctermbg=236        cterm=bold
+   hi  qfFileName         ctermfg=242        ctermbg=NONE       cterm=NONE
    hi  qfLineNr           ctermfg=fg         ctermbg=NONE       cterm=NONE
    hi  qfError            ctermfg=fg         ctermbg=0          cterm=underline
+
+   " Taglist
+   hi MyTagListFileName   ctermfg=15         ctermbg=238
+   hi MyTagListTitle      ctermfg=241        ctermbg=bg         cterm=bold
 end
