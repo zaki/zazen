@@ -60,7 +60,7 @@ hi PmenuThumb   guifg=fg               guibg=#777777   gui=NONE
 hi Question     guifg=#454545          guibg=bg        gui=bold
 hi SignColumn   guifg=#ffffff          guibg=#696969   gui=NONE
 
-hi SpecialKey   guifg=#ffffff          guibg=#696969   gui=NONE
+hi SpecialKey   guifg=#454545          guibg=#000000   gui=NONE
 
 hi SpellBad     guisp=#ffffff          guibg=#000000   gui=undercurl    guisp=#ffc0c0
 hi SpellCap     guisp=#5d5d5d                          gui=undercurl
@@ -142,7 +142,7 @@ if &t_Co > 255
    hi  Question           ctermfg=238        ctermbg=bg         cterm=bold
    hi  SignColumn         ctermfg=15         ctermbg=242        cterm=NONE
 
-   hi  SpecialKey         ctermfg=15         ctermbg=242        cterm=NONE
+   hi  SpecialKey         ctermfg=238        ctermbg=bg         cterm=NONE
 
    hi  SpellBad           ctermbg=0          cterm=NONE
    hi  SpellCap           ctermbg=0          cterm=NONE
