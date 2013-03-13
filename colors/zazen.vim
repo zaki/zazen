@@ -58,7 +58,7 @@ hi PmenuSbar    guifg=fg               guibg=#5d5d5d   gui=NONE
 hi PmenuThumb   guifg=fg               guibg=#777777   gui=NONE
 
 hi Question     guifg=#454545          guibg=bg        gui=bold
-hi SignColumn   guifg=#ffffff          guibg=#696969   gui=NONE
+hi SignColumn   guifg=#ffffff          guibg=#181818   gui=NONE
 
 hi SpecialKey   guifg=#454545          guibg=#000000   gui=NONE
 
@@ -140,7 +140,7 @@ if &t_Co > 255
    hi  PmenuThumb         ctermfg=fg         ctermbg=243        cterm=NONE
 
    hi  Question           ctermfg=238        ctermbg=bg         cterm=bold
-   hi  SignColumn         ctermfg=15         ctermbg=242        cterm=NONE
+   hi  SignColumn         ctermfg=15         ctermbg=233        cterm=NONE
 
    hi  SpecialKey         ctermfg=238        ctermbg=bg         cterm=NONE
 
